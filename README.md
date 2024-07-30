@@ -6,7 +6,7 @@ Title: "Lumnda - Advanced Collaborative Workspace"
 
 **Lumnda** is an advanced collaborative workspace designed to enhance productivity, streamline communication, and foster innovation for teams and organizations.
 
-![Lumnda Logo](https://via.placeholder.com/150)
+![Lumnda Logo](/public/logo.jpg/150)
 
 ## Features
 - **Real-time Collaboration:** Edit documents simultaneously and maintain version control.
