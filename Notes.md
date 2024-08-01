@@ -6,7 +6,7 @@ This document outlines the tasks and subtasks required for the development of ou
 
 ## Authentication and Database Integration
 
-- [ ] **Connect with Google Authentication**
+- `1` **Connect with Google Authentication**
   - [ ] Set up Google OAuth in the project.
   - [ ] Integrate NextAuth.js for authentication.
   - [ ] Ensure proper security and data handling.
