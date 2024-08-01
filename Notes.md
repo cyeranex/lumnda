@@ -4,19 +4,19 @@
 
 This document outlines the tasks and subtasks required for the development of our project. The project will include features such as Google authentication, real-time chat, code execution, and user interaction.
 
-## Project Outline and Preparation
-
-- [ ] **Design the Outline**
-  - [ ] Plan the overall structure of the project.
-  - [ ] Design wireframes and user flows.
-  - [ ] Identify key features and sections.
-
 ## Authentication and Database Integration
 
 - [ ] **Connect with Google Authentication**
   - [ ] Set up Google OAuth in the project.
   - [ ] Integrate NextAuth.js for authentication.
   - [ ] Ensure proper security and data handling.
+
+## Project Outline and Preparation
+
+- [ ] **Design the Outline**
+  - [ ] Plan the overall structure of the project.
+  - [ ] Design wireframes and user flows.
+  - [ ] Identify key features and sections.
 
 - [ ] **Connect with Vercel and Database**
   - **Vercel:**
