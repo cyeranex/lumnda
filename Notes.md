@@ -3,6 +3,7 @@
 ## Overview
 
 This document outlines the tasks and subtasks required for the development of our project. The project will include features such as Google authentication, real-time chat, code execution, and user interaction.
+it hard to follow up
 
 ## Authentication and Database Integration
 
