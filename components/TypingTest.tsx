@@ -4,6 +4,11 @@ import { far } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 const customStyle = {
     background: 'transparent !important', // Use !important to override any other styles
+    padding : '0px',
+    fontFamily: 'monospace !important',
+    fontSize: '20px',
+    fontWeight: 'bold',
+    margin: '40px 15px',
 };
 
 const TypingTest = ({ snippet, expectedOutput }: { snippet: string, expectedOutput: string }) => {
@@ -60,16 +65,21 @@ const TypingTest = ({ snippet, expectedOutput }: { snippet: string, expectedOutp
   };
 
   return (
-    <div className="bg-turboBg text-turboText rounded shadow-lg" style={{ position: 'relative', height: '400px', width: '400px',border:'2px solid black' }}>
-      {/* Highlighted snippet */}
-      <div className="absolute top-0 left-0 w-full h-full z-0 p-2 whitespace-pre-wrap overflow-hidden" aria-hidden="true">
+    <div className=" rounded shadow-lg" style={{ position: 'relative', height: 'auto', width: 'auto',border:'0px solid black' }}>
+      <div className='Turbo h-auto' style={{
+        border: '0px solid black',
+        width: '120vh',
+        height: '80vh',
+      }}>
+        {/* Highlighted snippet */}
+      <div className="absolute top-0 left-0 w-auto h-auto z-0 p-2 whitespace-pre-wrap border-0" aria-hidden="true">
         <SyntaxHighlighter language="c" style={far} wrapLines={true} customStyle={{...customStyle,opacity:'0.3'}}>
           {snippet}
         </SyntaxHighlighter>
       </div>
 
       {/* User input with syntax highlighting */}
-      <div className="absolute top-0 left-0 w-full h-full z-10 p-2 whitespace-pre-wrap overflow-hidden">
+      <div className="absolute top-0 left-0 w-auto h-auto z-10 p-2 whitespace-pre-wrap border-red-800 border-0">
         <SyntaxHighlighter language="c" style={far} wrapLines={true} customStyle={customStyle}>
           {userInput}
         </SyntaxHighlighter>
@@ -78,25 +88,27 @@ const TypingTest = ({ snippet, expectedOutput }: { snippet: string, expectedOutp
       {/* Text area for user input */}
       <textarea
         ref={textAreaRef}
-        className="relative z-20  caret-white"
+        className="relative z-20 p-2 h-auto border-1"
         value={userInput}
         onChange={handleChange}
+        cols={100}
+        rows={40}
         style={{
           backgroundColor: 'transparent',
           color: 'transparent',
-          border: '2px solid orange ',
-          outline: 'none',
-          resize: 'none',
-          height: '100%',
-          margin: '0',
-          padding: '0',
-          top: '0',
-          left:'0',
-          width: '100%',
-          minHeight: '100%'
+          outline:'none',
+          height: 'auto',
+          width: 'auto',
+          minHeight: '60vh',
+          caretColor: 'yellow',
+          fontFamily: 'monospace',
+          fontSize: '20px',
+          fontWeight: 'bold',
+          margin: '40px 15px',
         }}
       />
       
+      </div>
       {/* Buttons for save and run */}
       <div className="mt-2">
         <button className="px-4 py-2 bg-blue-500 text-white rounded" onClick={handleSave}>Save (Ctrl+S)</button>
