@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TypingTest from '../components/TypingTest';
-import snippets from './snippets';
+import snippets from '../snippets';
 
 
 const Home = () => {
