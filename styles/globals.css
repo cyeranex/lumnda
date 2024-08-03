@@ -4,6 +4,13 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #000080;
-  color: #FFFFFF;
+  background-color: #5858e6;
+}
+
+.Turbo {
+  background-image: url('../public/bg-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
