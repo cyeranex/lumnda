@@ -1,6 +1,6 @@
 {
   "name": "coding-ide",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "coding-ide": "file:",
+    "framer-motion": "^11.3.21",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-syntax-highlighter": "^15.5.0"
+    "react-syntax-highlighter": "^15.5.0",
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",

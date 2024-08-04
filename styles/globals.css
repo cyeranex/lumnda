@@ -4,13 +4,31 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #5858e6;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-.Turbo {
+* {
+  box-sizing: border-box;
+}
+
+.typeArea {
   background-image: url('../public/bg-1.jpg');
-  background-position: center;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
+/* .textInput {
+  background-color: 'transparent';
+  color: 'transparent';
+  outline: none;
+  height: auto;
+  width: auto;
+  caret-color: 'yellow';
+  font-family: 'monospace';
+  font-size: 20px;
+  font-weight: 'bold';
+  margin: '40px 15px',
+} */

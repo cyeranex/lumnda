@@ -14,7 +14,8 @@
     "incremental": true,
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "snippets.js"],
   "exclude": ["node_modules"]
