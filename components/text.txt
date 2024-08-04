@@ -8,7 +8,24 @@ const SyntaxHighlighter = dynamic(
   { ssr: false }
 );
 
+// const isDesktopOrLaptop = useMediaQuery({
+//   query: '(min-width: 1224px)'
+// });
 
+// const fontValue = isDesktopOrLaptop ? '1.3rem' : '0.8rem';
+// const fontSizeRem = isDesktopOrLaptop ? 1.3 : 0.8;
+const fontValue ='1.3rem' ;
+const fontSizeRem = 1.3 ;
+
+
+const customStyle = {
+  background: 'transparent !important',
+  padding: '0px',
+  fontFamily: 'monospace !important',
+  fontSize: fontValue,
+  fontWeight: 'bold',
+  margin: '0', // Adjusted margin for better spacing
+};
 
 const TypingTest = ({ snippet, expectedOutput }: { snippet: string, expectedOutput: string }) => {
   const [style, setStyle] = useState<{ [key: string]: React.CSSProperties } | null>(null);
@@ -19,23 +36,6 @@ const TypingTest = ({ snippet, expectedOutput }: { snippet: string, expectedOutp
   const [cols, setCols] = useState(0);
   const [rows, setRows] = useState(0);
   const text = snippet;
-
-
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1224px)'
-  });
-  
-  const fontValue = isDesktopOrLaptop ? '1.3rem' : '0.75rem';
-  const fontSizeRem = isDesktopOrLaptop ? 1.3 : 0.9;
-
-  const customStyle = {
-    background: 'transparent !important',
-    padding: '0px',
-    fontFamily: 'monospace !important',
-    fontSize: fontValue,
-    fontWeight: 'bold',
-    margin: '0', // Adjusted margin for better spacing
-  };
 
   useEffect(() => {
     setUserInput(''); // Clear the textarea when snippet changes
@@ -143,8 +143,8 @@ const TypingTest = ({ snippet, expectedOutput }: { snippet: string, expectedOutp
   if (!style) return (<div>Style Loading...</div>);
 
   return (
-    <div className="relative rounded shadow-lg  p-2 md:p-4 flex flex-col md:flex-row bg-gray-800 justify-around h-full w-full" >
-      <div className='block h-full '>
+    <div className="relative rounded shadow-lg border border-red-300 p-2 md:p-4 flex flex-col md:flex-row bg-gray-800 justify-around h-full w-full" >
+      <div className='block h-full border border-red-100'>
       <div className="typeArea relative flex-1 flex p-5 md:p-10"  style={{ minHeight:calHeight}}>
         {/* Syntax Highlighter for snippet */}
         <div className="absolute top-0 h-auto w-auto left-0 z-0 m-5 md:m-10" >
@@ -174,7 +174,7 @@ const TypingTest = ({ snippet, expectedOutput }: { snippet: string, expectedOutp
         {/* Text area for user input */}
         <textarea
           ref={textAreaRef}
-          className="textInput relative z-20 h-auto "
+          className="textInput relative z-20 h-auto border border-y-green-500"
           value={userInput}
           onChange={handleChange}
           cols={cols}
@@ -212,7 +212,8 @@ const TypingTest = ({ snippet, expectedOutput }: { snippet: string, expectedOutp
 
       {/* Display output */}
       <div className="mt-2 md:w-96">
-        <pre className="bg-black text-white p-2 min-h-20 rounded text-gray-900">Output Console :<br />{output}</pre>
+        Output :
+        <pre className="bg-gray-100 p-2 rounded text-gray-900">{output}</pre>
         {error && <div className="text-green-500 mt-2">✔️ Compiled in 361ms <br />✔️ Code Executed Successfully!!!</div>}
       </div>
     </div>
