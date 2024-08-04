@@ -2,7 +2,13 @@ const snippets = [
     {
       id: 1,
       title: "Add Two Numbers",
-      code: `#include <stdio.h>\nint main() {\n  int a, b, sum;\n  printf("Enter two numbers: ");\n  scanf("%d %d", &a, &b);\n  sum = a + b;\n  printf("Sum: %d", sum);\n  return 0;\n}`,
+      code : `
+            #inlude <hrllo>\n
+            int main(){\n
+              int a, b, c;\n
+              printf("hrllo");\n
+            }\n
+      `,
       output: "Enter two numbers: 3 4\nSum: 7",
       level: "Easy"
     },
