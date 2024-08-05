@@ -22,9 +22,9 @@ const Home = () => {
   const selectedSnippet = filteredSnippets[selectedSnippetIndex] || {}; // Handle potential out of bounds
 
   return (
-    <div className="p-5 m-0 ">
-      <div>
-        <h1 className="text-2xl mb-5">Select the Code to Practice</h1>
+    <div className="p-0 md:p-5 m-0 ">
+      <div className='m-5'>
+        <h1 className="text-2xl mb-5 text-white">Select the Code to Practice</h1>
       <select value={selectedLevel} onChange={handleLevelChange}>
         <option value="All">All</option>
         <option value="Easy">Easy</option>
