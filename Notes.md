@@ -84,3 +84,5 @@ it hard to follow up
   - [ ] Deploy the final version to Vercel.
   - [ ] Ensure all integrations (auth, database, chat, etc.) work seamlessly.
   - [ ] Monitor and maintain the application.
+
+this plas are changed to create a project likw monkey type
