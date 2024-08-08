@@ -5,6 +5,9 @@
 This document outlines the tasks and subtasks required for the development of our project. The project will include features such as Google authentication, real-time chat, code execution, and user interaction.
 it hard to follow up
 
+## Ideas
+- Give the students task and if they done their rank college vise show in the page
+
 ## Authentication and Database Integration
 
 - `1` **Connect with Google Authentication**
